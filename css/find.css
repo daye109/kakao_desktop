@@ -1,0 +1,42 @@
+.find .find_list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #202022;
+  padding: 30px 0;
+  margin-bottom: 20px;
+}
+
+.find .find_icon_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.find_icon_list i {
+  margin-bottom: 15px;
+}
+.find_icon_list span {
+  font-size: 14px;
+}
+
+.find .friends_recommend_title {
+  font-size: 10px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.685);
+}
+
+.find .plus_color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #1b1b1b;
+}
+
+.plus_color i {
+  color: rgb(214, 211, 211);
+}

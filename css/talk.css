@@ -1,0 +1,156 @@
+.talk_body {
+  background-color: #262628;
+}
+.talk_header_container {
+  background-color: #262628e3;
+}
+
+.talk_header_icon a:nth-child(1) {
+  margin-right: 10px;
+}
+
+.talk {
+  padding: 90px 20px;
+}
+
+/* talk 창 */
+
+.talk_date {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  padding: 10px 0 30px;
+  background-color: #262628;
+}
+
+.talk_messages {
+  font-size: 12px;
+}
+
+.talk_messages .talk_img {
+  width: 35px;
+  height: 35px;
+  background: url("../images/ryeong.jpg") center center;
+  background-size: cover;
+  border-radius: 12px;
+  margin-right: 5px;
+}
+
+.talk_messages .left_message,
+.talk_messages .right_message {
+  margin-bottom: 50px;
+}
+
+.talk_messages .left_message {
+  display: flex;
+  justify-content: flex-start;
+  animation: leftFadeIn 0.5s ease-in-out;
+}
+
+.talk_messages .right_message {
+  animation: rightFadeIn 0.5s ease-in-out;
+}
+
+.message_content > * {
+  margin-bottom: 7px;
+}
+.message_content .message_author {
+  display: block;
+}
+
+.message_content .message {
+  padding: 8px;
+  display: inline-block;
+  background-color: #3a3a3c;
+  border-radius: 11px;
+}
+
+.right_message .message_box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.message_box .message_time {
+  font-size: 9px;
+  color: #838181;
+}
+
+.right_message .message_time {
+  margin-right: 4px;
+}
+
+.left_message .message_time {
+  margin-left: 4px;
+}
+
+.left_message .message {
+  border-top-left-radius: 0;
+}
+.right_message .message {
+  border-top-right-radius: 0;
+}
+
+/* input 부분 */
+
+.talk_entry {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c2c2e;
+}
+
+.talk_entry i {
+  font-size: 20px;
+  cursor: pointer;
+  color: #c1c1c1;
+}
+
+.talk_entry .fa-hashtag {
+  font-size: 19px;
+  margin-left: 5px;
+}
+
+.talk_entry input {
+  width: 75%;
+  background-color: #37373a;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 30px;
+  color: white;
+  margin-top: 2px;
+  border: 1px solid #c1c1c11c;
+}
+
+.talk_entry input:focus {
+  outline: none;
+}
+
+/* animation */
+
+@keyframes leftFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rightFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

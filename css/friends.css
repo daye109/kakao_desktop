@@ -1,0 +1,51 @@
+
+.friends_me {
+  margin-bottom: 20px;
+}
+
+.friends_sub_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  color: rgba(255, 255, 255, 0.685);
+}
+
+.friends_sub_title h5 {
+  font-size: 10px;
+}
+
+.friends_sub_title i {
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.bookmark_inven .friends_friend,
+.friends_inven .friends_friend {
+  margin-top: 20px;
+}
+
+.friends_music {
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  font-size: 10px;
+  border: 1px solid #69df69;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.friends_music i {
+  font-size: 8px;
+  margin-left: 7px;
+  color: #69df69;
+}
+/* javascript 추가 제거 클래스 */
+
+.on {
+  display: none;
+}
+
+.display_none {
+  display: none;
+}
